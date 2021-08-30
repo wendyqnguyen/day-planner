@@ -63,9 +63,32 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  justify-content: center;
+  align-content: center;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+.save-icon {
+  border: none;
+  background-color: #06AED5;
+  cursor: pointer;
+}
+
+.event-block {
+  border-left: 1px solid black;
+  background-color:lightgray;
+  margin-top: 15px solid white;
+  margin-bottom: 5px solid white;
+}
+
+.hour {
+
+}
+ 
+.hour-row {
+
 }
