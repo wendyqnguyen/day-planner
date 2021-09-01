@@ -79,7 +79,7 @@ textarea{
 }
 
 .event-block {
-  border-left: 1px solid black;
+  border-left: 1px solid black; 
   background-color:lightgray;
   margin-top: 15px solid white;
   margin-bottom: 5px solid white;
@@ -90,5 +90,6 @@ textarea{
 }
  
 .hour-row {
-
+border: 1px ÷solid;
+margin: 25px;
 }

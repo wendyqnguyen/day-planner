@@ -1,57 +1,79 @@
+// calendar elements
+var dayEl = document.querySelector("#currentDay");
+
+// current day
+var timestamp = moment();
+
+console.log(timestamp.hour());
+
+var nineAm = document.querySelector("#nine-am-event");
+console.log(nineAm);
+nineAm.innerHTML= "some event";
 //calender events array example:
 var calEvents = [
   {
-    "time": "9am",
-    "description": "",
+    "hour": "9",
+    "description": "event",
     "status": ""
   },
   {
-    "time": "10am",
-    "description": "",
+    "hour": "10",
+    "description": "event",
     "status": ""
   },
   {
-    "time": "11am",
-    "description": "",
+    "hour": "11",
+    "description": "event",
     "status": ""
   },
   {
-    "time": "12pm",
-    "description": "",
+    "hour": "12",
+    "description": "event",
     "status": ""
   },
   {
-    "time": "1pm",
-    "description": "",
+    "hour": "13",
+    "description": "event",
     "status": ""
   },
   {
-    "time": "2pm",
-    "description": "",
+    "hour": "14",
+    "description": "event",
     "status": ""
   },
   {
-    "time": "3pm",
-    "description": "",
+    "hour": "15",
+    "description": "event",
     "status": ""
   },
   {
-    "time": "4pm",
-    "description": "",
+    "hour": "16",
+    "description": "event",
     "status": ""
   },
   {
-    "time": "5pm",
-    "description": "",
+    "hour": "5pm",
+    "description": "event",
     "status": ""
   }
 ]
+function colorCodeCalendar () {
+    // color code calendar, hours in the past are grey, current hour is red, future hours are gree
+    var currentHour = timestamp.hour();
+    if (currentHour > 9){
 
+    }
+};
 
 function loadCalendar () {
 // display the day in "Thursday, September 5th" format
+var displayDay = timestamp.format('dddd') + " " + timestamp.format('MMMM') + " " + timestamp.format('Mo');
+dayEl.innerHTML = displayDay;
 
-// create calendar grid
+colorCodeCalendar ();
+
+
+// console.log(timestamp.format('HH:mm'));
 
 // color code calendar grid so that past time blocks are grey, current is red and future is green
 
