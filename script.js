@@ -68,7 +68,7 @@ function colorCodeCalendar () {
       console.log(i + " " + hourEl.getAttribute("style"));
     }else if (timestamp.hour()>i){
       var hourEl = document.querySelector(`#${CSS.escape(i)}`);
-      hourEl.style.backgroundColor = "grey";
+      hourEl.style.backgroundColor = "lightgrey";
       console.log(i + " " + hourEl.getAttribute("background-color"));
     }else{
       var hourEl = document.querySelector(`#${CSS.escape(i)}`);
