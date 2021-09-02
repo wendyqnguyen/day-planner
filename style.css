@@ -80,7 +80,7 @@ textarea{
 
 .event-block {
   border-left: 1px solid black; 
-  background-color:lightgray;
+  /* background-color:red; */
   margin-top: 15px solid white;
   margin-bottom: 5px solid white;
 }
