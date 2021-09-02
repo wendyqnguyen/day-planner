@@ -64,16 +64,16 @@ function colorCodeCalendar () {
   for (var i=9; i< 18; i++){
     if(timestamp.hour() == i){
       var hourEl = document.querySelector(`#${CSS.escape(i)}`);
-      hourEl.setAttribute("background-color", "red");
-      // console.log(i + " " + hourEl.getAttribute("background-color"));
+      hourEl.style.backgroundColor = "red";
+      console.log(i + " " + hourEl.getAttribute("style"));
     }else if (timestamp.hour()>i){
       var hourEl = document.querySelector(`#${CSS.escape(i)}`);
-      hourEl.setAttribute("background-color", "grey");
-      // console.log(i + " " + hourEl.getAttribute("background-color"));
+      hourEl.style.backgroundColor = "grey";
+      console.log(i + " " + hourEl.getAttribute("background-color"));
     }else{
       var hourEl = document.querySelector(`#${CSS.escape(i)}`);
-      hourEl.setAttribute("background-color", "green");
-      // console.log(i + " " + hourEl.getAttribute("background-color"));
+      hourEl.style.backgroundColor = "#77dd77";
+      console.log(i + " " + hourEl.getAttribute("background-color"));
     }
 }
 };
@@ -124,7 +124,6 @@ var hourHandler = function (event) {
 
 // add event listener for any save button
 var buttons = document.querySelectorAll(".save-btn").length;
-
 for (var i = 0; i < buttons ; i++) {
     document.querySelectorAll(".save-btn")[i].addEventListener("click", hourHandler);
 }
