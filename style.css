@@ -60,11 +60,10 @@ textarea{
 
 .event-block {
   display: flex;
-  justify-content: center;
-  align-items: center;
   border-left: 1px solid black; 
   margin-top: 15px solid white;
   margin-bottom: 5px solid white;
+  padding: 15px;
 }
 
 .hour {
